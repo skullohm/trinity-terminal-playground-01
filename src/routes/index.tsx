@@ -6,7 +6,7 @@ import logoAsset from "../assets/trinity-logo.webp.asset.json";
 
 // The asset pointer URL is a relative path that only resolves on Lovable hosting;
 // prefix the absolute CDN origin so the logo also loads on external deploys (e.g. Vercel).
-const logoUrl = logoAsset.url.startsWith("http")
+const logoUrl = "/trinity-logo.webp";
   ? logoAsset.url
   : `https://trinity-terminal-playground.lovable.app${logoAsset.url}`;
 
